@@ -1,0 +1,2 @@
+# Console.Ghost
+CLI project
