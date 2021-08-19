@@ -1,25 +1,26 @@
 # Console.Ghost
 CLI project
 
-"Welcome to Console.Ghost ! *potential ghost emoji* Haunted House."
+Display message: "Welcome to Console.Ghost ! *potential ghost emoji* Haunted House. 
+To come out alive on the other end, you have to sucessfully pass the coding quiz behind the haunted doors. "
 
 Would you like you like to enter? y / n
-   y : Spooktacular!! To come out alive on the other end, you have to sucessfully pass the coding quiz behind the haunted doors.  
-   n : Muhaha bye! 
+   y : Question 1  
+   n : Muhaha Game over bye! 
    
-N: Do you want to play again if you dare.
+End: Do you want to play again if you dare.
    y : Start again
-   n : Game over!
+   n : Muhaha Game over bye! 
    
 Question 1: ... 
-   y : Right Answer
+   y : Right Answer a
    n : Wrong answer : Wrong !!! The Console.Ghost has eaten you alive. Game over!
    
-Y: Question 2: ... 
-   y : Right Answer
+Right Answer a: Question 2: ... 
+   y : Right Answer b
    n : Wrong answer : Wrong !!! The Console.Ghost has eaten you alive. Game over!
    
-Y: Question 3: ... 
+Right Answer b: Question 3: ... 
    y : Right Answer
    n : Wrong answer : Wrong !!! The Console.Ghost has eaten you alive. Game over!
    
