@@ -22,6 +22,7 @@ Y: Question 2: ...
 Y: Question 3: ... 
    y : Right Answer
    n : Wrong answer : Wrong !!! The Console.Ghost has eaten you alive. Game over!
+   
 Y: Congratualtions you have survived the Console.Ghost haunted house! 
 
 
