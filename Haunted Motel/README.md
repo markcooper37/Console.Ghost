@@ -2,7 +2,7 @@ Haunted Motel
 
 - Move to `Haunted Motel` directory
     ```sh
-    cd TextAdventures
+    cd Haunted Motel
     ```
 -   Installation:
     ```sh
