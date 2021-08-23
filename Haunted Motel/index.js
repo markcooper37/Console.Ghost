@@ -1,10 +1,12 @@
 const prompts = require('prompts');
 const stories = require('./stories.json');
 
+// Toggle feature
 let response = {};
 response.value = {};
 response.value.description = "Choose your story!";
 let node = stories.stories;
+ 
 
 function getValues(n) {
     let choices = [];
