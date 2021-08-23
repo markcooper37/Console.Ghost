@@ -1,0 +1,104 @@
+{
+    "stories": [
+        {
+            "title": "Haunted Motel",
+            "description": "\nIt's summer holidays, your parents decide to go on a roadtrip to the mountains and they want you to join them for some family time.  Would you like to join them or rather go out with your friends? ",
+            "answers": [
+                {
+                    "title": "I'm not gonna go on their silly roadtrip!",
+                    "description": "\nYour parents are disappointed that you do not want to spend time with your family. You are grounded!",
+                    "over": true,
+                    "win": false
+                },
+                {
+                    "title": "Sure! I rather go than be grounded",
+                    "over": false,
+                    "description": "\nFinally the day came. You went on the dreaded family roadtrip. Your parents car starts to break down in a secluded area late at night. Your only options are to wait 25 hours for the mechanic to get you or drive 1 mile to the nearest motel. What would you do?  ",
+                    "answers": [
+                        {
+                            "title": "Wait 25 hours in the car, I watched too many horror films about motels.",
+                            "description": "\nGet cosy! It is going to be a long night with your family.",
+                            "over": true,
+                            "win": false
+                        },
+                        {
+                            "title": "You convince your parents to drive to the nearest motel for wifi lol.",
+                            "description": "\nYou notice weird signs along the drive telling you to turn back, but you ignore them and arrive at the motel. The motel looks desserted. What do you want to do?  ",
+                            "over": false,
+                            "answers": [
+                                {
+                                    "title": "Go into the motel",
+                                    "over": false,
+                                    "description": "\nYou enter the motel, you look around and you see no ones. Your family and you decide to venture into the rooms. You hear a loud scream from your baby sister and you rush over to her to find a decaying dead body on the ground. What do you do?",
+                                    "answers": [
+                                        {
+                                            "title": "Your family freaks out and tries to look for reception to call the police...",
+                                            "description": "\nThe police arrive at the location. The police search the area and they dont find the dead body. That is when you realise, your family and you are the only ones that can see the dead man on the ground... ",
+                                            "over": true,
+                                            "win": false
+                                        },
+                                        {
+                                            "title": "To avoid being accomplices of murder you convince your parents not to call the police.  ",
+                                            "description": "\nYou notice two things in the room, a shovel at the corner of the room and a glittering object in the pocket of the dead man. What do you reach for?",
+                                            "over": false,
+                                            "answers": [
+                                                {
+                                                    "title": "Shovel",
+                                                    "description": "\nYour family and you bury the dead body and attempt to flee the the scene of crime. You turn around and feel a sharp pain on your neck and you drop to the floor gasping for air!",
+                                                    "over": true,
+                                                    "win": false
+                                                },
+                                                {
+                                                    "title": "Reach for the object",
+                                                    "description": "\nYou pull the object from the pocket to realise it is a locket. Out of curiousity, do you wanna open the locket or leave the locket where you found it ?",
+                                                    "over": false,
+                                                    "answers": [
+                                                        {
+                                                            "title": "Open",
+                                                            "description": "\nA flash of light hits you, and you standing next to your car with your family on the road where your car first broke down. You reach into your pocket to find the locket. Congratulations, your life is now stuck in a time loop until you break free!",
+                                                            "over": true,
+                                                            "win": true
+                                                        },
+                                                        {
+                                                            "title": "Leave",
+                                                            "description": "\nYou have watched too many horror stories, you decide to drop the locket and flee from the motel. Suddenly, all the doors flung shut, the lights start flickering, you turn around and feel a sharp pain on your neck and you drop to the floor gasping for air ",
+                                                            "over": true,
+                                                            "win": false
+                                                        }
+                                                    ]
+                                                }                                                
+                                            ]
+                                        },
+                                        {
+                                            "title": "You forget everything you saw and try to leave the motel immediately!",
+                                            "description": "\nAll the doors flung shut, the lights start flickering, you turn around and feel a sharp pain on your neck and you drop to the floor gasping for air!",
+                                            "over": true,
+                                            "win": false
+                                        }
+                                    ]    
+                                },
+                        
+                                
+                          
+                
+                                {
+                                    "title": "You convince your parents to turn back to the main road as this motel is really creepy.",
+                                    "over": true,
+                                    "win": false,
+                                    "description": "\nYour parents drive out to the main road to wait for the mechanic. However, the wolves got to you before the hypothermia could. Your entire family dies!"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "The unknown story",
+            "description": "Jokes lol no story here!",
+            "over": true,
+            "win": false
+        }
+    ],
+    "over": false
+}
