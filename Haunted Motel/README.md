@@ -5,10 +5,10 @@ Haunted Motel
     cd TextAdventures
     ```
 
--   ```sh
+-   Installation:
     npm install
     ```
--   ```sh
-    npm run play
+-   To run play:
+    node index.js
     ```
 
