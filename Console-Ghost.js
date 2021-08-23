@@ -5,79 +5,64 @@ const readline = rl.createInterface({
 });
 
 function startGame() {
-  const steps = {
-    start: {
-      message: "Welcome to the Console.Ghost Haunted House! To come out alive on the other end, you have to successfully pass the coding quiz behind the haunted doors. Would you like to enter? (yes/no)",
-      yes: "firstQuestion",
-      no: () => {
-        console.log("Muhahahaha! Goodbye for now...");
-        readline.close();
-      },
-    },
-    firstQuestion: {
-      message: "Is HTML fun? (yes/no)",
-      yes: "secondQuestion",
-      no: "endLose",
-    },
-    secondQuestion: {
-      message: "That's the right answer! Is CSS fun? (yes/no)",
-      yes: "thirdQuestion",
-      no: "endLose",
-    },
-    thirdQuestion: {
-      message: "Correct! Is JavaScript fun? (yes/no)",
-      yes: "endWin",
-      no: "endLose",
-    },
-    endLose: {
-      message: "Wrong! The Console.Ghost has eaten you alive! Would you like to try again?",
-      yes: "start",
-      no: () => {
-        console.log("Muhahahaha! Goodbye for now...");
-        readline.close();
-      },
-    },
-    endWin: {
-      message: "Congratulations, you have survived the Console.Ghost Haunted House! Do you want to play again?",
-      yes: "start",
-      no: () => {
-        console.log("Muhahahaha! Goodbye for now...");
-        readline.close();
-      },
-    },
-    // put more steps here
-  };
+  const steps = require("./steps.js");
 
   let currentStep = "start";
+  let alreadyLocked = 0;
 
   function logStep() {
     const step = steps[currentStep];
 
     if (step) {
-      readline.question(`${step.message || ""} `, (input) => {
+      readline.question(`${step.message || ""} > `, (input) => {
         handleAnswer(input);
       });
     }
   }
 
   function handleAnswer(answer) {
+    
     let step;
 
-    if (answer === "yes") {
-      step = steps[currentStep].yes;
-    } else {
-      step = steps[currentStep].no;
+    if (steps[currentStep].type == "question") {
+      if (answer == steps[currentStep].correct) {
+        alreadyLocked = 0;
+        step = steps[currentStep].yes;
+      }
+      else {
+        if (alreadyLocked == 1) {
+          step = "endLose";
+        }
+        else {
+          console.log("Oh no! You answered the question incorrectly and must try the other door!");
+          alreadyLocked = 1;
+          step = steps[currentStep].no;
+        }
+      }
     }
 
-    if (typeof step === "function") {
-      step();
-      return;
+    if (steps[currentStep].type == "floor") {
+      if (answer == steps[currentStep].colour1) {
+        step = steps[currentStep].colour1Question;
+      }
+      else {
+        step = steps[currentStep].colour2Question;
+      }
     }
 
-    if (typeof step === "string") {
-      currentStep = step;
+    if (steps[currentStep].type == "stage") {
+      if (answer === "yes") {
+        step = steps[currentStep].yes;
+      } else {
+        step = steps[currentStep].no;
+      }
+      if (step == "no") {
+        console.log("Muhahahaha! Goodbye for now...");
+        readline.close();
+        return;
+      }
     }
-
+    currentStep = step;
     logStep();
   }
 
