@@ -14,7 +14,7 @@ function getValues(n) {
     return choices;
 }
 
-/*Salif's coloring function*/
+/* Coloring function*/
 function clr(text, color) {
 	var code = { red: 91, green: 92, blue: 34, cian: 96, yellow: 93 }[color];
 	if (code) return "\x1b[" + code + "m" + text + "\x1b[0m";
